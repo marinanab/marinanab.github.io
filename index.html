@@ -70,8 +70,12 @@ img {margin-bottom: -7px}
   <p class="w3-medium">Mariana Brandão</p>
 </footer>
 <script>
+	var link = document.getElementById("barra");
+	function barra_width() {
+		link.style['width'] = "25%";
+	}
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-		document.getElementById("barra").style.width=25%; 
+		barra_width()
 		}
 </script>
 </body>
